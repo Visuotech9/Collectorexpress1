@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/profileCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_marginBottom="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:id="@+id/lin_layout"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--<View-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:background="@color/lightgrey"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"/>-->
+
+        <LinearLayout
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_weight=".40"
+
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:text="Himanshu Choudhary"
+                    android:textColor="@color/Black"
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:textSize="11dp"
+                    android:visibility="gone"
+                    android:text="jan 2019 - present"
+                    android:id="@+id/tv_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="14dp"
+                    android:text="indore"
+                    android:textColor="@color/DimGray"
+                    android:id="@+id/tv_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight=".60"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_10"
+                android:weightSum="1"
+                android:layout_height="match_parent">
+                
+                <TextView
+                    android:id="@+id/tv_accept"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="12dp"
+                    android:text="Konnect"
+                    android:gravity="center"
+                    android:backgroundTint="@color/dot_dark"
+                    android:textColor="@color/White"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:paddingTop="@dimen/dimen_10"
+                    android:paddingBottom="@dimen/dimen_10"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12dp"
+                    android:backgroundTint="@color/Gray"
+                    android:text="Delete"
+                    android:textColor="@color/Black"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <!--<View-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:background="@color/lightgrey"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"/>-->
+
+
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/transitions_container"
+    tools:context=".Activities.Act_home">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view1"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:id="@+id/laya1"
+                android:orientation="vertical"
+                android:layout_weight=".3"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:background="@color/Red"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/White"
+                    android:text="A"
+                    android:textSize="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/White"
+                    android:text="(शासन से प्राप्त - G2G)"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay1"
+                android:background="@color/Red_light"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight=".7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:textColor="@color/White"
+                    android:text="शिकायतें लंबित"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_complaint_pend_a"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:textStyle="bold"
+                    android:textColor="@color/White"
+                    android:text="99"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+                <!--                <ProgressBar-->
+<!--                    android:id="@+id/customProgress"-->
+<!--                    style="@style/CustomProgressBar"-->
+<!--                    android:layout_width="match_parent"/>-->
+<!--                style="?android:attr/progressBarStyleHorizontal"-->
+
+
+                <ProgressBar
+                    style="@style/CustomProgressBar"
+                    android:id="@+id/progressBar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/tv_pend_message_a"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:textColor="@color/White"
+                    android:text="0.54% Pending of 1479 Complaints"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+                />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view2"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:id="@+id/layb1"
+                android:orientation="vertical"
+                android:layout_weight=".3"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:background="@color/Red"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/White"
+                    android:text="B"
+                    android:textSize="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/White"
+                    android:text="(नागरिक से प्राप्त - G2C)"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay2"
+                android:background="@color/Orange"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight=".7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:textColor="@color/White"
+                    android:text="शिकायतें लंबित"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_complaint_pend_b"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:textStyle="bold"
+                    android:textColor="@color/White"
+                    android:text="99"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+                <!--                <ProgressBar-->
+<!--                    android:id="@+id/customProgress"-->
+<!--                    style="@style/CustomProgressBar"-->
+<!--                    android:layout_width="match_parent"/>-->
+<!--                style="?android:attr/progressBarStyleHorizontal"-->
+
+
+                <ProgressBar
+                    style="@style/CustomProgressBar"
+                    android:id="@+id/progressBar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/tv_pend_message_b"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:textColor="@color/White"
+                    android:text="0.54% Pending of 1479 Complaints"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+                />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view3"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:id="@+id/layc1"
+                android:orientation="vertical"
+                android:layout_weight=".3"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:background="@color/Red"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/White"
+                    android:text="C"
+                    android:textSize="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/White"
+                    android:text="(आयुक्त महोदय से प्राप्त पत्र)"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay3"
+                android:background="@color/Gray_light"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight=".7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:textColor="@color/White"
+                    android:text="शिकायतें लंबित"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_complaint_pend_c"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:textStyle="bold"
+                    android:textColor="@color/White"
+                    android:text="99"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+                <!--                <ProgressBar-->
+<!--                    android:id="@+id/customProgress"-->
+<!--                    style="@style/CustomProgressBar"-->
+<!--                    android:layout_width="match_parent"/>-->
+<!--                style="?android:attr/progressBarStyleHorizontal"-->
+
+
+                <ProgressBar
+                    style="@style/CustomProgressBar"
+                    android:id="@+id/progressBar3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/tv_pend_message_c"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:textColor="@color/White"
+                    android:text="0.54% Pending of 1479 Complaints"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+                />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view4"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:id="@+id/layd1"
+                android:orientation="vertical"
+                android:layout_weight=".3"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:background="@color/Red"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/White"
+                    android:text="D"
+                    android:textSize="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/White"
+                    android:text="(जनसुनवाई)"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay4"
+                android:background="@color/Navy"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight=".7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:textColor="@color/White"
+                    android:text="शिकायतें लंबित"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_complaint_pend_d"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:textStyle="bold"
+                    android:textColor="@color/White"
+                    android:text="99"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+                <!--                <ProgressBar-->
+<!--                    android:id="@+id/customProgress"-->
+<!--                    style="@style/CustomProgressBar"-->
+<!--                    android:layout_width="match_parent"/>-->
+<!--                style="?android:attr/progressBarStyleHorizontal"-->
+
+
+                <ProgressBar
+                    style="@style/CustomProgressBar"
+                    android:id="@+id/progressBar4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/tv_pend_message_d"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:textColor="@color/White"
+                    android:text="0.54% Pending of 1479 Complaints"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+                />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
